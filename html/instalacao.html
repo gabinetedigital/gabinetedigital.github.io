@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Instalação &mdash; Gabinete Digital 3.0 documentação</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.1.0/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Gabinete Digital 3.0 documentação" href="index.html" />
+    <link rel="next" title="Titulo 1" href="install-nginx.html" />
+    <link rel="prev" title="Software open-source" href="opensource.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          Gabinete Digital</a>
+        <span class="navbar-text navbar-version pull-left"><b>3.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+                <li><a href="http://gabinetedigita.rs.gov.br">Gabinete Digital</a></li>
+                <li><a href="http://www.estado.rs.gov.br">Governo do Estado</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Items <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sobre.html">O Gabinete Digital</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estrutura.html">Estrutura técnica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opensource.html">Software open-source</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Instalação</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#detalhamento">Detalhamento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maos-a-obra">Mãos a obra</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="instalacao">
+<h1>Instalação<a class="headerlink" href="#instalacao" title="Link permanente para este título">¶</a></h1>
+<p>Para instalar o Gabinete Digital, vamos necessitar de vários pré-requisitos</p>
+<div class="section" id="detalhamento">
+<h2>Detalhamento<a class="headerlink" href="#detalhamento" title="Link permanente para este título">¶</a></h2>
+<p>O que você necessita ter já pronto</p>
+<blockquote>
+<div><ul class="simple">
+<li>Servidor Ubuntu Server Linux (versão testada nesta documentação 14.04) com permissão de root</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Seu servidor deve estar conectado a internet</p>
+</div>
+<p>O que vamos instalar e configurar</p>
+<blockquote>
+<div><ul class="simple">
+<li>Nginx webserver</li>
+<li>Python</li>
+<li>PHP</li>
+<li>Ruby</li>
+<li>MySQL</li>
+</ul>
+</div></blockquote>
+<p>Softwares e frameworks de terceiros</p>
+<blockquote>
+<div><ul class="simple">
+<li>Wordpress</li>
+<li>Allourideas e Pairwise</li>
+<li>Thumbor</li>
+<li>Nextgen Gallery (plugin WP)</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="maos-a-obra">
+<h2>Mãos a obra<a class="headerlink" href="#maos-a-obra" title="Link permanente para este título">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install-nginx.html">Titulo 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install-nginx.html#titulo-2">Titulo 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/instalacao.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Sérgio Berlotto.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
